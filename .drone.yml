@@ -1,3 +1,4 @@
+---
 kind: pipeline
 type: kubernetes
 name: default
@@ -30,3 +31,8 @@ steps:
         - push
     commands:
       - go test -cover ./...
+---
+kind: signature
+hmac: 150b90eaf5e407c4283f5c0f04138a089963df71e9bd36da90d5a5b2b7331598
+
+...
